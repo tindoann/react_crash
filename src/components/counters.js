@@ -12,6 +12,7 @@ export default class counters extends Component {
         {this.props.counters.map(counter => (
           <Counter
             // Step 3: Modify `this.handler` structure to `this.props` instead
+            // These attributes are internal
             key={counter.id}
             counter={counter}
             onDelete={this.props.onDelete}
