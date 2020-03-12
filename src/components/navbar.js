@@ -1,17 +1,15 @@
-  
-import React from "react";
+// Created stateless funcitonal component to display the navbar
 
-//Stateless Functional Component
+import React from "react";
 
 // Object destructuring allows for pulling specific props
 const NavBar = ({ totalCounters }) => {
   return (
     <nav className="navbar navbar-light bg-light">
-      <a href="https://github.com/OEMarshall" className="navbar-brand">
+      <a href="https://github.com/tindoann" className="navbar-brand">
         Navbar{" "}
         <span className="badge badge-pill badge-secondary">
-          {/* Makes code cleaner since you don't need `props.`
-                or `this.props` everywhere */}
+          {/* turns into a javascript variable  */}
           {totalCounters}
         </span>
       </a>
