@@ -1,3 +1,5 @@
+// Passes the data up to the parent component app.js
+
 import React, { Component } from "react";
 import Counter from "../components/counter";
 
@@ -6,6 +8,7 @@ export default class counters extends Component {
     return (
       <React.Fragment>
         {/* Step 4: Change 'this.state' to 'this.props'*/}
+        {/* Loops throught the counter items  */}
         {this.props.counters.map(counter => (
           <Counter
             // Step 3: Modify `this.handler` structure to `this.props` instead
@@ -21,7 +24,7 @@ export default class counters extends Component {
         >
           Reset
         </button>
-      <React.Fragment/>
+      </React.Fragment>
     );
   }
 }

@@ -45,6 +45,7 @@ class App extends Component {
         <main className="container">
           <Counters
             //Step 2: add handlers and needed objects
+            // pass it down to counter component
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
             onDelete={this.handleDelete}
